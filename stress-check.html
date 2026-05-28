@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfoM | ストレスチェック運用支援</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">InfoM</a>
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="index.html">ホーム</a>
+        <a href="system-development.html">システム開発</a>
+        <a href="stress-check.html" aria-current="page">ストレスチェック</a>
+        <a href="lecture.html">ストレス講義</a>
+      </nav>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">メニュー</button>
+    </div>
+    <div id="mobile-nav" class="mobile-nav" hidden>
+      <a href="index.html">ホーム</a>
+      <a href="system-development.html">システム開発</a>
+      <a href="stress-check.html" aria-current="page">ストレスチェック</a>
+      <a href="lecture.html">ストレス講義</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="lp-hero">
+      <div class="container lp-hero-inner">
+        <div class="lp-hero-copy">
+          <p class="lp-kicker">Stress Check Support</p>
+          <h1>個人結果を会社に渡さない形で、ストレスチェックを実施します。</h1>
+          <p class="lp-lead">
+            Web回答、本人への結果通知、受検状況の管理、会社向けの簡易報告まで。
+            小規模事業所でも実施しやすいように、情報の扱いと運用手順を整理します。
+          </p>
+          <div class="lp-trust-row" aria-label="対応の特徴">
+            <span>ブラウザ回答</span>
+            <span>QRコード・本人専用URL</span>
+            <span>本人へ結果通知</span>
+            <span>会社は個人結果を閲覧不可</span>
+          </div>
+        </div>
+        <div class="product-shot" aria-label="受検管理画面のイメージ">
+          <div class="product-topbar">
+            <span>Stress Check Console</span>
+            <strong>受検状況</strong>
+          </div>
+          <div class="product-metrics">
+            <div><span>対象者</span><strong>18</strong></div>
+            <div><span>受検済み</span><strong>14</strong></div>
+            <div><span>未受検</span><strong>4</strong></div>
+          </div>
+          <div class="product-list">
+            <div><span class="status status-done"></span><strong>本人結果通知</strong><em>本人のみ</em></div>
+            <div><span class="status status-work"></span><strong>集団分析</strong><em>人数確認</em></div>
+            <div><span class="status status-new"></span><strong>改善相談</strong><em>実施後</em></div>
+          </div>
+          <div class="product-foot">
+            <span>案内</span>
+            <span>回答</span>
+            <span>通知</span>
+            <span>報告</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-intro">
+      <div class="container lp-split">
+        <div>
+          <p class="lp-kicker">Policy</p>
+          <h2>大事なのは、検査そのものより情報の扱いです。</h2>
+        </div>
+        <p>
+          ストレスチェックでは、本人に返す情報と会社に共有する情報を混ぜないことが重要です。
+          InfoMでは、会社担当者が個人結果、回答内容、点数、高ストレス判定を閲覧しない前提で進めます。
+        </p>
+      </div>
+    </section>
+
+    <section class="lp-section lp-muted">
+      <div class="container">
+        <p class="lp-kicker centered">Support</p>
+        <h2 class="lp-title centered">対応できること</h2>
+        <div class="lp-card-grid">
+          <article class="lp-card">
+            <h3>受検案内の作成</h3>
+            <p>回答方法、個人結果の扱い、会社へ共有される情報を従業員に分かる言葉で整理します。</p>
+          </article>
+          <article class="lp-card">
+            <h3>Web回答の運用</h3>
+            <p>本人専用URLやQRコードを使い、スマホやPCのブラウザから回答できる形にします。</p>
+          </article>
+          <article class="lp-card">
+            <h3>受検状況の管理</h3>
+            <p>会社へ共有するのは受検済み・未受検の確認まで。回答内容は共有しません。</p>
+          </article>
+          <article class="lp-card">
+            <h3>本人結果通知</h3>
+            <p>結果は従業員本人へ通知します。LINEや通常メールで個人結果を送る運用は避けます。</p>
+          </article>
+          <article class="lp-card">
+            <h3>簡易実施報告</h3>
+            <p>実施人数、受検状況、集団分析の扱い、改善相談の論点を整理します。</p>
+          </article>
+          <article class="lp-card">
+            <h3>改善相談</h3>
+            <p>検査して終わりにせず、職場改善や個別相談につながる次の対応を確認します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section">
+      <div class="container">
+        <p class="lp-kicker centered">Information Sharing</p>
+        <h2 class="lp-title centered">会社に共有する情報・共有しない情報</h2>
+        <div class="lp-scope-table" role="table" aria-label="会社に共有する情報">
+          <div class="lp-scope-head" role="row">
+            <span role="columnheader">区分</span>
+            <span role="columnheader">扱う情報</span>
+            <span role="columnheader">補足</span>
+          </div>
+          <div role="row"><span>会社に共有する</span><span>受検済み・未受検</span><span>回答を促すために必要な範囲で共有します。</span></div>
+          <div role="row"><span>条件付きで共有する</span><span>集団分析</span><span>個人が特定されない人数単位で扱います。</span></div>
+          <div role="row"><span>本人同意後に扱う</span><span>面接指導申出に必要な情報</span><span>会社へ何が伝わるかを事前に説明します。</span></div>
+          <div role="row"><span>会社に共有しない</span><span>回答内容、点数、個人結果、高ストレス判定</span><span>本人同意がない状態では会社担当者へ提供しません。</span></div>
+          <div role="row"><span>慎重に扱う</span><span>10人未満部署の集団分析</span><span>個人が特定されやすい場合は原則として出しません。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-muted">
+      <div class="container">
+        <p class="lp-kicker centered">How It Works</p>
+        <h2 class="lp-title centered">実施の流れ</h2>
+        <div class="lp-flow">
+          <div><span>01</span><strong>対象者確認</strong><p>人数、実施時期、回答方法、紙対応の有無を確認します。</p></div>
+          <div><span>02</span><strong>案内準備</strong><p>従業員向け説明文、回答URL、QRコードなどを準備します。</p></div>
+          <div><span>03</span><strong>回答・通知</strong><p>回答を受け付け、結果は本人へ通知します。</p></div>
+          <div><span>04</span><strong>報告・相談</strong><p>受検状況、集団分析の扱い、改善相談の内容を整理します。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section">
+      <div class="container lp-split">
+        <div>
+          <p class="lp-kicker">Cost</p>
+          <h2>費用は、人数だけでなく運用範囲で変わります。</h2>
+        </div>
+        <div class="lp-review-list">
+          <div>
+            <strong>標準で確認するもの</strong>
+            <p>対象人数、回答方法、本人通知、受検状況管理、会社向け報告の範囲。</p>
+          </div>
+          <div>
+            <strong>追加確認が必要なもの</strong>
+            <p>紙回答、会社端末対応、医師面接指導、産業医連携、多拠点運用、追加相談。</p>
+          </div>
+          <div>
+            <strong>見積前に分かるとよいもの</strong>
+            <p>対象人数、実施希望時期、スマホ利用可否、メールアドレスの有無、会社に必要な報告内容。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" id="contact">
+      <div class="container">
+        <h2 class="cta-title">ストレスチェックの実施方法を相談する</h2>
+        <p class="cta-lead">人数や回答方法が未定でも、会社に共有する情報の範囲から整理できます。</p>
+        <form class="contact-form" action="#" method="get" onsubmit="return false;">
+          <label><span class="lbl">会社名</span><input type="text" placeholder="例）株式会社インフォム" /></label>
+          <label><span class="lbl">メールアドレス</span><input type="email" placeholder="name@example.com" /></label>
+          <label class="full"><span class="lbl">ご相談内容</span><textarea rows="4" placeholder="対象人数、実施時期、Web回答や紙対応の希望などをご記入ください"></textarea></label>
+          <button type="submit" class="btn btn-primary btn-lg">送信する</button>
+        </form>
+        <p class="form-note">※現在はサンプル表示です。実運用時は送信先とプライバシー方針を設定します。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">InfoM</p>
+      <nav aria-label="フッターメニュー">
+        <a href="index.html">ホーム</a>
+        <a href="system-development.html">システム開発</a>
+        <a href="stress-check.html">ストレスチェック</a>
+        <a href="lecture.html">ストレス講義</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    const button = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#mobile-nav');
+    if (button && nav) {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        nav.hidden = expanded;
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfoM | 業務に合うWebシステム開発</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-current="page">InfoM</a>
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="index.html" aria-current="page">ホーム</a>
+        <a href="system-development.html">システム開発</a>
+        <a href="stress-check.html">ストレスチェック</a>
+        <a href="lecture.html">ストレス講義</a>
+      </nav>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">メニュー</button>
+    </div>
+    <div id="mobile-nav" class="mobile-nav" hidden>
+      <a href="index.html" aria-current="page">ホーム</a>
+      <a href="system-development.html">システム開発</a>
+      <a href="stress-check.html">ストレスチェック</a>
+      <a href="lecture.html">ストレス講義</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="lp-hero">
+      <div class="container lp-hero-inner">
+        <div class="lp-hero-copy">
+          <p class="lp-kicker">System Development</p>
+          <h1>紙・Excel・属人化した作業を、使えるWebシステムへ。</h1>
+          <p class="lp-lead">
+            入力、確認、集計、共有、報告を一つずつ整理し、現場で無理なく使える形にします。
+            最初から大きく作らず、毎日の作業が軽くなる範囲から始めます。
+          </p>
+          <div class="lp-actions">
+            <a class="btn btn-primary btn-lg" href="system-development.html">システム開発を見る</a>
+            <a class="btn btn-outline btn-lg" href="stress-check.html">ストレスチェック支援を見る</a>
+          </div>
+          <div class="lp-trust-row" aria-label="対応の特徴">
+            <span>業務整理から対応</span>
+            <span>小さく試作</span>
+            <span>運用手順まで作成</span>
+            <span>必要に応じて保守対応</span>
+          </div>
+        </div>
+        <div class="product-shot" aria-label="業務管理画面のイメージ">
+          <div class="product-topbar">
+            <span>InfoM WorkBoard</span>
+            <strong>本日確認する業務</strong>
+          </div>
+          <div class="product-metrics">
+            <div><span>未確認</span><strong>12</strong></div>
+            <div><span>対応中</span><strong>8</strong></div>
+            <div><span>完了</span><strong>34</strong></div>
+          </div>
+          <div class="product-list">
+            <div><span class="status status-new"></span><strong>受検状況の確認</strong><em>担当者</em></div>
+            <div><span class="status status-work"></span><strong>相談記録の更新</strong><em>管理者</em></div>
+            <div><span class="status status-done"></span><strong>月次レポート作成</strong><em>自動集計</em></div>
+          </div>
+          <div class="product-foot">
+            <span>入力</span>
+            <span>確認</span>
+            <span>集計</span>
+            <span>報告</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-intro">
+      <div class="container lp-split">
+        <div>
+          <p class="lp-kicker">Position</p>
+          <h2>きれいな画面より、実際に回る業務を優先します。</h2>
+        </div>
+        <p>
+          InfoMは、業務の全体像を整理してから必要な機能を決めます。
+          使わない機能を増やすより、毎日の入力、確認、集計、共有が少しずつ楽になることを重視します。
+        </p>
+      </div>
+    </section>
+
+    <section class="lp-section lp-muted">
+      <div class="container">
+        <p class="lp-kicker centered">Before / After</p>
+        <h2 class="lp-title centered">システム化で変えるところ</h2>
+        <div class="before-after">
+          <article>
+            <span>Before</span>
+            <h3>人が覚えて、人が探して、人が転記する</h3>
+            <ul>
+              <li>最新版のExcelが分からない</li>
+              <li>確認漏れや転記ミスが出る</li>
+              <li>集計や報告のたびに時間がかかる</li>
+            </ul>
+          </article>
+          <article>
+            <span>After</span>
+            <h3>入力した情報を、そのまま確認・集計に使う</h3>
+            <ul>
+              <li>必要な情報を一つの画面で確認</li>
+              <li>担当者、期限、状況が見える</li>
+              <li>報告や振り返りに使える形で残る</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section" id="issues">
+      <div class="container">
+        <p class="lp-kicker centered">Issues</p>
+        <h2 class="lp-title centered">よくある困りごと</h2>
+        <div class="lp-card-grid">
+          <article class="lp-card">
+            <h3>Excelが増えすぎている</h3>
+            <p>複数の表を見比べる、転記する、最新版が分からないなど、確認作業が増えている状態を整理します。</p>
+          </article>
+          <article class="lp-card">
+            <h3>担当者しか分からない</h3>
+            <p>入力方法、確認順、集計方法が属人化している業務を、誰でも追える形にします。</p>
+          </article>
+          <article class="lp-card">
+            <h3>制度や相談対応の管理が重い</h3>
+            <p>ストレスチェック、相談記録、講義申込、報告資料など、管理が煩雑な作業を仕組みにします。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-muted" id="process">
+      <div class="container">
+        <p class="lp-kicker centered">How We Build</p>
+        <h2 class="lp-title centered">開発の進め方</h2>
+        <p class="lp-center-text">最初に作るものを絞り、使いながら改善します。大きな仕様書がなくても、現状の困りごとから始められます。</p>
+        <div class="lp-flow">
+          <div><span>01</span><strong>業務整理</strong><p>今の流れ、入力項目、確認者、集計方法を確認します。</p></div>
+          <div><span>02</span><strong>小さく設計</strong><p>最初に必要な画面と、後回しにする機能を分けます。</p></div>
+          <div><span>03</span><strong>試作・確認</strong><p>実際の使い方に合わせて、入力や表示を調整します。</p></div>
+          <div><span>04</span><strong>運用改善</strong><p>使い方、権限、保守、追加改善の進め方を整理します。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section" id="systems">
+      <div class="container">
+        <p class="lp-kicker centered">Examples</p>
+        <h2 class="lp-title centered">作れるものの例</h2>
+        <div class="lp-deliverable-grid">
+          <article>
+            <h3>業務管理システム</h3>
+            <p>顧客管理、案件管理、作業記録、日報、進捗確認などを一つの画面にまとめます。</p>
+          </article>
+          <article>
+            <h3>入力フォーム・集計画面</h3>
+            <p>GoogleフォームやExcelだけでは足りない入力、検索、確認、集計をWeb化します。</p>
+          </article>
+          <article>
+            <h3>ストレスチェック運用管理</h3>
+            <p>受検案内、受検状況、本人通知、簡易報告など、制度運用に関わる作業を整理します。</p>
+          </article>
+          <article>
+            <h3>相談・面談記録</h3>
+            <p>相談履歴、対応状況、次回確認事項などを、権限に配慮して管理します。</p>
+          </article>
+          <article>
+            <h3>講義・研修管理</h3>
+            <p>受講者、実施日、資料、アンケート、振り返りを管理しやすくします。</p>
+          </article>
+          <article>
+            <h3>社内ポータル</h3>
+            <p>案内、申請、問い合わせ、資料共有などを一か所にまとめます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-muted" id="scope">
+      <div class="container lp-split">
+        <div>
+          <p class="lp-kicker">Scope</p>
+          <h2>作る範囲を先に整理します。</h2>
+        </div>
+        <div class="lp-review-list">
+          <div>
+            <strong>最初に作るもの</strong>
+            <p>入力、一覧、検索、集計、権限など、業務が回るために必要な最小範囲。</p>
+          </div>
+          <div>
+            <strong>後から足すもの</strong>
+            <p>通知、自動化、帳票出力、外部連携など、運用後に必要性を確認して追加する機能。</p>
+          </div>
+          <div>
+            <strong>個別に確認するもの</strong>
+            <p>外部公開、大量データ移行、高度なセキュリティ要件、他社サービスとの連携。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section" id="related">
+      <div class="container">
+        <p class="lp-kicker centered">Related Services</p>
+        <h2 class="lp-title centered">関連サービス</h2>
+        <p class="lp-center-text">ストレスチェックや講義は、システム開発と組み合わせて業務として回しやすくできます。必要な場合だけ追加します。</p>
+        <div class="lp-card-grid">
+          <article class="lp-card">
+            <h3>ストレスチェック支援</h3>
+            <p>Web回答、本人結果通知、受検状況管理、会社へ共有する情報の整理に対応します。</p>
+            <a href="stress-check.html">詳しく見る</a>
+          </article>
+          <article class="lp-card">
+            <h3>ストレス講義</h3>
+            <p>セルフケア、管理職向け対応、ストレスチェック後の職場改善などを扱います。</p>
+            <a href="lecture.html">詳しく見る</a>
+          </article>
+          <article class="lp-card">
+            <h3>運用改善相談</h3>
+            <p>システムを作る前に、業務の流れや担当者の負担を整理します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-muted" id="price">
+      <div class="container">
+        <p class="lp-kicker centered">Price</p>
+        <h2 class="lp-title centered">費用の考え方</h2>
+        <p class="lp-center-text">金額は機能数よりも、業務範囲、利用者数、権限、データ量、運用方法で変わります。内容確認後に見積します。</p>
+        <div class="pricing-grid">
+          <article class="price-card"><span class="price-label">業務整理</span><h3>33,000円から</h3><p>現状確認、業務フロー整理、開発範囲の切り分け。</p></article>
+          <article class="price-card"><span class="price-label">小規模ツール</span><h3>165,000円から</h3><p>入力フォーム、一覧、検索、簡易管理画面など。</p></article>
+          <article class="price-card"><span class="price-label">Webシステム</span><h3>330,000円から</h3><p>複数画面、権限、集計、帳票、運用設計を含む開発。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" id="contact">
+      <div class="container">
+        <h2 class="cta-title">今の業務を、どこから整えるか相談する</h2>
+        <p class="cta-lead">システム化する前に、まずは作業の流れと負担の大きい箇所を整理します。</p>
+        <form class="contact-form" action="#" method="get" onsubmit="return false;">
+          <label><span class="lbl">会社名</span><input type="text" placeholder="例）株式会社インフォム" /></label>
+          <label><span class="lbl">メールアドレス</span><input type="email" placeholder="name@example.com" /></label>
+          <label class="full"><span class="lbl">ご相談内容</span><textarea rows="4" placeholder="現在の管理方法、困っている作業、希望時期などをご記入ください"></textarea></label>
+          <button type="submit" class="btn btn-primary btn-lg">送信する</button>
+        </form>
+        <p class="form-note">※現在はサンプル表示です。実運用時は送信先とプライバシー方針を設定します。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">InfoM</p>
+      <nav aria-label="フッターメニュー">
+        <a href="index.html">ホーム</a>
+        <a href="system-development.html">システム開発</a>
+        <a href="stress-check.html">ストレスチェック</a>
+        <a href="lecture.html">ストレス講義</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    const button = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#mobile-nav');
+    if (button && nav) {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        nav.hidden = expanded;
+      });
+    }
+  </script>
+</body>
+</html>

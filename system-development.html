@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfoM | システム開発</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">InfoM</a>
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="index.html">ホーム</a>
+        <a href="system-development.html" aria-current="page">システム開発</a>
+        <a href="stress-check.html">ストレスチェック</a>
+        <a href="lecture.html">ストレス講義</a>
+      </nav>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">メニュー</button>
+    </div>
+    <div id="mobile-nav" class="mobile-nav" hidden>
+      <a href="index.html">ホーム</a>
+      <a href="system-development.html" aria-current="page">システム開発</a>
+      <a href="stress-check.html">ストレスチェック</a>
+      <a href="lecture.html">ストレス講義</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="lp-hero">
+      <div class="container lp-hero-inner">
+        <div class="lp-hero-copy">
+          <p class="lp-kicker">System Development</p>
+          <h1>現場の作業に合わせて、必要な機能から作ります。</h1>
+          <p class="lp-lead">
+            業務フローを確認し、入力、一覧、検索、集計、権限、帳票などを必要な順番で整えます。
+            「何を作るか」より先に、「どの作業を減らすか」を決める開発です。
+          </p>
+          <div class="lp-trust-row" aria-label="開発の特徴">
+            <span>業務整理</span>
+            <span>Webフォーム</span>
+            <span>管理画面</span>
+            <span>帳票・集計</span>
+            <span>運用支援</span>
+          </div>
+        </div>
+        <div class="product-shot" aria-label="管理画面のイメージ">
+          <div class="product-topbar">
+            <span>Project Console</span>
+            <strong>業務管理</strong>
+          </div>
+          <div class="product-metrics">
+            <div><span>入力待ち</span><strong>6</strong></div>
+            <div><span>確認中</span><strong>14</strong></div>
+            <div><span>今月完了</span><strong>42</strong></div>
+          </div>
+          <div class="product-list">
+            <div><span class="status status-new"></span><strong>申請内容の確認</strong><em>一覧</em></div>
+            <div><span class="status status-work"></span><strong>対応履歴の追記</strong><em>詳細</em></div>
+            <div><span class="status status-done"></span><strong>報告書データ出力</strong><em>集計</em></div>
+          </div>
+          <div class="product-foot">
+            <span>入力</span>
+            <span>権限</span>
+            <span>集計</span>
+            <span>出力</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-intro">
+      <div class="container lp-split">
+        <div>
+          <p class="lp-kicker">Approach</p>
+          <h2>最初から全部作らず、使う部分から始めます。</h2>
+        </div>
+        <p>
+          業務システムは、機能が多いほど良いとは限りません。
+          InfoMでは、最初に作る範囲、後で足す範囲、作らない方がよい範囲を分け、運用できるサイズで始めます。
+        </p>
+      </div>
+    </section>
+
+    <section class="lp-section lp-muted">
+      <div class="container">
+        <p class="lp-kicker centered">Use Cases</p>
+        <h2 class="lp-title centered">対応しやすい業務</h2>
+        <div class="lp-deliverable-grid">
+          <article>
+            <h3>Excel管理のWeb化</h3>
+            <p>複数ファイル、転記、最新版管理を減らし、入力と確認を一つの流れにします。</p>
+          </article>
+          <article>
+            <h3>申請・承認管理</h3>
+            <p>申請内容、確認者、ステータス、履歴を見えるようにします。</p>
+          </article>
+          <article>
+            <h3>顧客・案件管理</h3>
+            <p>顧客情報、対応履歴、次回予定、進捗をまとめて管理します。</p>
+          </article>
+          <article>
+            <h3>相談・面談記録</h3>
+            <p>記録の入力、権限、対応状況、次回確認を整理します。</p>
+          </article>
+          <article>
+            <h3>ストレスチェック運用管理</h3>
+            <p>受検状況、本人通知、簡易報告など、制度運用に関わる作業を支援します。</p>
+          </article>
+          <article>
+            <h3>研修・講義管理</h3>
+            <p>受講者、日程、資料、アンケート、振り返りを管理しやすくします。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section">
+      <div class="container">
+        <p class="lp-kicker centered">Build Scope</p>
+        <h2 class="lp-title centered">開発で整える範囲</h2>
+        <div class="lp-scope-table" role="table" aria-label="開発で整える範囲">
+          <div class="lp-scope-head" role="row">
+            <span role="columnheader">領域</span>
+            <span role="columnheader">内容</span>
+            <span role="columnheader">目的</span>
+          </div>
+          <div role="row"><span>入力</span><span>フォーム、必須項目、選択肢、入力補助</span><span>転記や入力漏れを減らす</span></div>
+          <div role="row"><span>一覧</span><span>検索、絞り込み、並び替え、ステータス表示</span><span>今見るべき情報を探しやすくする</span></div>
+          <div role="row"><span>詳細</span><span>対応履歴、添付、メモ、次回予定</span><span>担当者だけに情報が残らないようにする</span></div>
+          <div role="row"><span>集計</span><span>件数、進捗、月次集計、CSV出力</span><span>報告や振り返りに使える形にする</span></div>
+          <div role="row"><span>権限</span><span>閲覧範囲、編集範囲、管理者画面</span><span>見せてよい情報を分ける</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-muted">
+      <div class="container">
+        <p class="lp-kicker centered">Process</p>
+        <h2 class="lp-title centered">開発の流れ</h2>
+        <div class="lp-flow">
+          <div><span>01</span><strong>現状確認</strong><p>今の作業、使っている表、困っている場面を確認します。</p></div>
+          <div><span>02</span><strong>範囲整理</strong><p>最初に必要な機能と、後から足せる機能を分けます。</p></div>
+          <div><span>03</span><strong>試作</strong><p>画面や入力の流れを作り、実際の業務に合わせて調整します。</p></div>
+          <div><span>04</span><strong>運用開始</strong><p>使い方、権限、修正方法、保守の進め方を整理します。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section">
+      <div class="container lp-split">
+        <div>
+          <p class="lp-kicker">Cost</p>
+          <h2>費用は、作る画面数だけでは決まりません。</h2>
+        </div>
+        <div class="lp-review-list">
+          <div>
+            <strong>費用に影響するもの</strong>
+            <p>利用者数、権限、データ量、帳票、外部連携、公開範囲、保守方法。</p>
+          </div>
+          <div>
+            <strong>小さく始める目安</strong>
+            <p>業務整理は33,000円から、小規模ツールは165,000円から、Webシステムは330,000円から。</p>
+          </div>
+          <div>
+            <strong>見積前に確認すること</strong>
+            <p>いま何に時間がかかっているか、誰が使うか、どの情報を見せてよいか。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" id="contact">
+      <div class="container">
+        <h2 class="cta-title">今の業務を、どこからシステム化するか相談する</h2>
+        <p class="cta-lead">要件が固まっていなくても、現状のExcelや手順から整理できます。</p>
+        <form class="contact-form" action="#" method="get" onsubmit="return false;">
+          <label><span class="lbl">会社名</span><input type="text" placeholder="例）株式会社インフォム" /></label>
+          <label><span class="lbl">メールアドレス</span><input type="email" placeholder="name@example.com" /></label>
+          <label class="full"><span class="lbl">ご相談内容</span><textarea rows="4" placeholder="現在の管理方法、困っている作業、希望時期などをご記入ください"></textarea></label>
+          <button type="submit" class="btn btn-primary btn-lg">送信する</button>
+        </form>
+        <p class="form-note">※現在はサンプル表示です。実運用時は送信先とプライバシー方針を設定します。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">InfoM</p>
+      <nav aria-label="フッターメニュー">
+        <a href="index.html">ホーム</a>
+        <a href="system-development.html">システム開発</a>
+        <a href="stress-check.html">ストレスチェック</a>
+        <a href="lecture.html">ストレス講義</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    const button = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#mobile-nav');
+    if (button && nav) {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        nav.hidden = expanded;
+      });
+    }
+  </script>
+</body>
+</html>
