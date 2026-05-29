@@ -2612,3 +2612,137 @@ textarea {
   margin: 10px 0 0;
   color: var(--muted);
 }
+
+.trust-panel-grid,
+.info-grid,
+.cta-checks {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 780px) {
+  .trust-panel-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .info-grid,
+  .cta-checks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.trust-panel,
+.info-grid div,
+.notice-panel,
+.profile-card {
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+}
+
+.trust-panel {
+  padding: 22px;
+}
+
+.trust-panel span {
+  display: inline-flex;
+  margin-bottom: 14px;
+  color: var(--teal-dark);
+  font-weight: 900;
+}
+
+.trust-panel h3,
+.profile-card h2 {
+  margin: 0 0 8px;
+}
+
+.trust-panel p,
+.profile-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.info-grid div {
+  padding: 18px 20px;
+}
+
+.info-grid strong,
+.cta-checks strong,
+.notice-panel strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.info-grid span,
+.cta-checks span,
+.notice-panel p {
+  display: block;
+  color: var(--muted);
+}
+
+.link-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.link-panel a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  color: var(--teal-dark);
+  font-weight: 800;
+}
+
+.cta-simple {
+  max-width: 900px;
+}
+
+.cta-checks {
+  margin-top: 24px;
+}
+
+.cta-checks div {
+  padding: 18px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.notice-panel {
+  max-width: 760px;
+  margin: 24px auto 0;
+  padding: 18px 20px;
+  text-align: left;
+}
+
+.notice-panel a {
+  color: var(--teal-dark);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.profile-card {
+  padding: 26px;
+}
+
+.profile-card > span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--teal-dark);
+  font-weight: 900;
+}
+
+.profile-card ul {
+  margin: 14px 0 0;
+  padding-left: 1.2em;
+  color: var(--muted);
+}
