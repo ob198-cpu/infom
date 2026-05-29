@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>InfoM | 業務に合うWebシステム開発</title>
+  <title>InfoM | 業務改善とWebシステム開発</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="cosmo-page">
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-current="page">InfoM</a>
@@ -29,262 +29,244 @@
   </header>
 
   <main>
-    <section class="lp-hero">
-      <div class="container lp-hero-inner">
-        <div class="lp-hero-copy">
-          <p class="lp-kicker">System Development</p>
-          <h1>紙・Excel・属人化した作業を、使えるWebシステムへ。</h1>
-          <p class="lp-lead">
-            入力、確認、集計、共有、報告を一つずつ整理し、現場で無理なく使える形にします。
-            最初から大きく作らず、毎日の作業が軽くなる範囲から始めます。
+    <section class="cosmo-hero">
+      <div class="cosmo-orbit" aria-hidden="true"></div>
+      <div class="container cosmo-hero-grid">
+        <div class="cosmo-hero-copy">
+          <p class="cosmo-pill">AI Workflow / Web System Studio</p>
+          <h1>業務の流れを、<span>使えるWebシステム</span>に変える。</h1>
+          <p class="cosmo-lead">
+            紙、Excel、メール、属人化した確認作業を整理し、入力から集計、報告、改善までつながる仕組みにします。
+            システム開発を中心に、ストレスチェック運用や講義まで一体で支援できます。
           </p>
-          <div class="lp-actions">
+          <div class="cosmo-actions">
             <a class="btn btn-primary btn-lg" href="system-development.html">システム開発を見る</a>
-            <a class="btn btn-outline btn-lg" href="stress-check.html">ストレスチェック支援を見る</a>
+            <a class="btn btn-outline btn-lg" href="stress-check.html">ストレスチェックを見る</a>
           </div>
-          <div class="lp-trust-row" aria-label="対応の特徴">
-            <span>業務整理から対応</span>
-            <span>小さく試作</span>
-            <span>運用手順まで作成</span>
-            <span>必要に応じて保守対応</span>
+          <div class="cosmo-trust" aria-label="対応領域">
+            <span>業務整理</span>
+            <span>Webフォーム</span>
+            <span>権限管理</span>
+            <span>AI活用</span>
+            <span>運用改善</span>
           </div>
         </div>
-        <div class="product-shot" aria-label="業務管理画面のイメージ">
-          <div class="product-topbar">
-            <span>InfoM WorkBoard</span>
-            <strong>本日確認する業務</strong>
+
+        <div class="cosmo-console" aria-label="業務改善ダッシュボードのイメージ">
+          <div class="console-head">
+            <div class="console-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <strong>InfoM Automation Board</strong>
           </div>
-          <div class="product-metrics">
-            <div><span>未確認</span><strong>12</strong></div>
-            <div><span>対応中</span><strong>8</strong></div>
-            <div><span>完了</span><strong>34</strong></div>
-          </div>
-          <div class="product-list">
-            <div><span class="status status-new"></span><strong>受検状況の確認</strong><em>担当者</em></div>
-            <div><span class="status status-work"></span><strong>相談記録の更新</strong><em>管理者</em></div>
-            <div><span class="status status-done"></span><strong>月次レポート作成</strong><em>自動集計</em></div>
-          </div>
-          <div class="product-foot">
-            <span>入力</span>
-            <span>確認</span>
-            <span>集計</span>
-            <span>報告</span>
+          <div class="console-grid">
+            <div class="console-panel console-main">
+              <span class="console-label">WORKFLOW</span>
+              <h2>入力から報告までを一つの流れに</h2>
+              <div class="flow-map" aria-hidden="true">
+                <span>Input</span>
+                <i></i>
+                <span>Review</span>
+                <i></i>
+                <span>Report</span>
+              </div>
+            </div>
+            <div class="console-panel">
+              <span class="console-label">TIME SAVED</span>
+              <strong class="console-number">42%</strong>
+              <p>転記・集計・確認作業を削減する設計</p>
+            </div>
+            <div class="console-panel">
+              <span class="console-label">CONTROL</span>
+              <ul class="console-list">
+                <li>閲覧権限</li>
+                <li>受検状況</li>
+                <li>相談記録</li>
+              </ul>
+            </div>
+            <div class="console-panel console-wide">
+              <span class="console-label">NEXT ACTION</span>
+              <div class="action-row"><strong>未確認の業務</strong><em>12件</em></div>
+              <div class="action-row"><strong>今月の報告</strong><em>自動集計</em></div>
+              <div class="action-row"><strong>改善候補</strong><em>3件</em></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="lp-section lp-intro">
-      <div class="container lp-split">
-        <div>
-          <p class="lp-kicker">Position</p>
-          <h2>きれいな画面より、実際に回る業務を優先します。</h2>
-        </div>
-        <p>
-          InfoMは、業務の全体像を整理してから必要な機能を決めます。
-          使わない機能を増やすより、毎日の入力、確認、集計、共有が少しずつ楽になることを重視します。
-        </p>
+    <section class="cosmo-strip">
+      <div class="container cosmo-strip-inner" aria-label="サービス領域">
+        <span>System Development</span>
+        <span>Stress Check</span>
+        <span>Counseling</span>
+        <span>Lecture</span>
+        <span>AI Workflow</span>
       </div>
     </section>
 
-    <section class="lp-section lp-muted">
+    <section class="cosmo-section">
       <div class="container">
-        <p class="lp-kicker centered">Before / After</p>
-        <h2 class="lp-title centered">システム化で変えるところ</h2>
-        <div class="before-after">
-          <article>
-            <span>Before</span>
-            <h3>人が覚えて、人が探して、人が転記する</h3>
-            <ul>
-              <li>最新版のExcelが分からない</li>
-              <li>確認漏れや転記ミスが出る</li>
-              <li>集計や報告のたびに時間がかかる</li>
-            </ul>
-          </article>
-          <article>
-            <span>After</span>
-            <h3>入力した情報を、そのまま確認・集計に使う</h3>
-            <ul>
-              <li>必要な情報を一つの画面で確認</li>
-              <li>担当者、期限、状況が見える</li>
-              <li>報告や振り返りに使える形で残る</li>
-            </ul>
-          </article>
+        <div class="cosmo-section-head">
+          <p class="cosmo-eyebrow">Why InfoM</p>
+          <h2>ただ作るのではなく、業務が回る形にする。</h2>
+          <p>見た目だけの画面ではなく、誰が入力し、誰が確認し、何を会社に共有してよいのかまで整理します。</p>
         </div>
-      </div>
-    </section>
-
-    <section class="lp-section" id="issues">
-      <div class="container">
-        <p class="lp-kicker centered">Issues</p>
-        <h2 class="lp-title centered">よくある困りごと</h2>
-        <div class="lp-card-grid">
-          <article class="lp-card">
-            <h3>Excelが増えすぎている</h3>
-            <p>複数の表を見比べる、転記する、最新版が分からないなど、確認作業が増えている状態を整理します。</p>
-          </article>
-          <article class="lp-card">
-            <h3>担当者しか分からない</h3>
-            <p>入力方法、確認順、集計方法が属人化している業務を、誰でも追える形にします。</p>
-          </article>
-          <article class="lp-card">
-            <h3>制度や相談対応の管理が重い</h3>
-            <p>ストレスチェック、相談記録、講義申込、報告資料など、管理が煩雑な作業を仕組みにします。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="lp-section lp-muted" id="process">
-      <div class="container">
-        <p class="lp-kicker centered">How We Build</p>
-        <h2 class="lp-title centered">開発の進め方</h2>
-        <p class="lp-center-text">最初に作るものを絞り、使いながら改善します。大きな仕様書がなくても、現状の困りごとから始められます。</p>
-        <div class="lp-flow">
-          <div><span>01</span><strong>業務整理</strong><p>今の流れ、入力項目、確認者、集計方法を確認します。</p></div>
-          <div><span>02</span><strong>小さく設計</strong><p>最初に必要な画面と、後回しにする機能を分けます。</p></div>
-          <div><span>03</span><strong>試作・確認</strong><p>実際の使い方に合わせて、入力や表示を調整します。</p></div>
-          <div><span>04</span><strong>運用改善</strong><p>使い方、権限、保守、追加改善の進め方を整理します。</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="lp-section" id="systems">
-      <div class="container">
-        <p class="lp-kicker centered">Examples</p>
-        <h2 class="lp-title centered">作れるものの例</h2>
-        <div class="lp-deliverable-grid">
+        <div class="cosmo-feature-grid">
           <article>
-            <h3>業務管理システム</h3>
-            <p>顧客管理、案件管理、作業記録、日報、進捗確認などを一つの画面にまとめます。</p>
-          </article>
-          <article>
-            <h3>入力フォーム・集計画面</h3>
-            <p>GoogleフォームやExcelだけでは足りない入力、検索、確認、集計をWeb化します。</p>
-          </article>
-          <article>
-            <h3>ストレスチェック運用管理</h3>
-            <p>受検案内、受検状況、本人通知、簡易報告など、制度運用に関わる作業を整理します。</p>
-          </article>
-          <article>
-            <h3>相談・面談記録</h3>
-            <p>相談履歴、対応状況、次回確認事項などを、権限に配慮して管理します。</p>
-          </article>
-          <article>
-            <h3>講義・研修管理</h3>
-            <p>受講者、実施日、資料、アンケート、振り返りを管理しやすくします。</p>
-          </article>
-          <article>
-            <h3>社内ポータル</h3>
-            <p>案内、申請、問い合わせ、資料共有などを一か所にまとめます。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="lp-section lp-muted" id="scope">
-      <div class="container lp-split">
-        <div>
-          <p class="lp-kicker">Scope</p>
-          <h2>作る範囲を先に整理します。</h2>
-        </div>
-        <div class="lp-review-list">
-          <div>
-            <strong>最初に作るもの</strong>
-            <p>入力、一覧、検索、集計、権限など、業務が回るために必要な最小範囲。</p>
-          </div>
-          <div>
-            <strong>後から足すもの</strong>
-            <p>通知、自動化、帳票出力、外部連携など、運用後に必要性を確認して追加する機能。</p>
-          </div>
-          <div>
-            <strong>個別に確認するもの</strong>
-            <p>外部公開、大量データ移行、高度なセキュリティ要件、他社サービスとの連携。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="lp-section" id="related">
-      <div class="container">
-        <p class="lp-kicker centered">Related Services</p>
-        <h2 class="lp-title centered">関連サービス</h2>
-        <p class="lp-center-text">ストレスチェックや講義は、システム開発と組み合わせて業務として回しやすくできます。必要な場合だけ追加します。</p>
-        <div class="lp-card-grid">
-          <article class="lp-card">
-            <h3>ストレスチェック支援</h3>
-            <p>Web回答、本人結果通知、受検状況管理、会社へ共有する情報の整理に対応します。</p>
-            <a href="stress-check.html">詳しく見る</a>
-          </article>
-          <article class="lp-card">
-            <h3>ストレス講義</h3>
-            <p>セルフケア、管理職向け対応、ストレスチェック後の職場改善などを扱います。</p>
-            <a href="lecture.html">詳しく見る</a>
-          </article>
-          <article class="lp-card">
-            <h3>運用改善相談</h3>
-            <p>システムを作る前に、業務の流れや担当者の負担を整理します。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="lp-section">
-      <div class="container">
-        <p class="lp-kicker centered">Trust</p>
-        <h2 class="lp-title centered">相談前に確認できること</h2>
-        <p class="lp-center-text">価格や機能の前に、誰が何を扱い、どこまで対応するのかをはっきりさせます。信頼できない部分を残したまま進めません。</p>
-        <div class="trust-panel-grid">
-          <article class="trust-panel">
             <span>01</span>
-            <h3>対応範囲</h3>
-            <p>業務整理、Webシステム開発、ストレスチェック運用、ストレス講義を分けて説明します。対応しない範囲も事前に確認します。</p>
+            <h3>業務整理から入る</h3>
+            <p>現在の紙、Excel、メール、口頭確認を分解し、システム化する範囲としない範囲を決めます。</p>
           </article>
-          <article class="trust-panel">
+          <article>
             <span>02</span>
-            <h3>個人情報の扱い</h3>
-            <p>問い合わせ情報、従業員情報、ストレスチェック結果を混ぜずに扱います。会社へ共有する情報も事前に決めます。</p>
+            <h3>小さく作って試す</h3>
+            <p>最初から大きく作り込まず、毎月の負担が減る部分を優先して試作します。</p>
           </article>
-          <article class="trust-panel">
+          <article>
             <span>03</span>
-            <h3>進め方と成果物</h3>
-            <p>画面、帳票、説明文、報告資料など、残るものを確認してから進めます。口約束だけで作業を増やしません。</p>
+            <h3>情報の扱いを設計する</h3>
+            <p>個人結果、相談記録、社内共有情報を分け、権限と説明文を整えます。</p>
           </article>
         </div>
-        <div class="link-panel">
-          <a href="about.html">InfoMの考え方を見る</a>
-          <a href="privacy.html">個人情報の扱いを見る</a>
+      </div>
+    </section>
+
+    <section class="cosmo-section cosmo-dark-band">
+      <div class="container cosmo-solution-grid">
+        <div class="cosmo-section-head left">
+          <p class="cosmo-eyebrow">All-in-one Support</p>
+          <h2>システム開発を軸に、制度運用と人の支援までつなげる。</h2>
+          <p>
+            ストレスチェックや講義も、単発のサービスとしてではなく、会社の業務負担を減らし、従業員の支援につながる仕組みとして設計します。
+          </p>
+        </div>
+        <div class="solution-stack">
+          <a href="system-development.html">
+            <span>Product 01</span>
+            <strong>業務システム開発</strong>
+            <em>入力、一覧、検索、集計、権限、帳票を整える。</em>
+          </a>
+          <a href="stress-check.html">
+            <span>Product 02</span>
+            <strong>ストレスチェック運用支援</strong>
+            <em>Web回答、本人通知、受検状況管理、集団分析。</em>
+          </a>
+          <a href="lecture.html">
+            <span>Product 03</span>
+            <strong>ストレス講義</strong>
+            <em>セルフケア、管理職対応、改善行動へつなげる。</em>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="lp-section lp-muted" id="price">
+    <section class="cosmo-section">
       <div class="container">
-        <p class="lp-kicker centered">Price</p>
-        <h2 class="lp-title centered">費用の考え方</h2>
-        <p class="lp-center-text">金額は機能数よりも、業務範囲、利用者数、権限、データ量、運用方法で変わります。内容確認後に見積します。</p>
-        <div class="pricing-grid">
-          <article class="price-card"><span class="price-label">業務整理</span><h3>33,000円から</h3><p>現状確認、業務フロー整理、開発範囲の切り分け。</p></article>
-          <article class="price-card"><span class="price-label">小規模ツール</span><h3>165,000円から</h3><p>入力フォーム、一覧、検索、簡易管理画面など。</p></article>
-          <article class="price-card"><span class="price-label">Webシステム</span><h3>330,000円から</h3><p>複数画面、権限、集計、帳票、運用設計を含む開発。</p></article>
+        <div class="cosmo-section-head">
+          <p class="cosmo-eyebrow">Use Cases</p>
+          <h2>こういう状態なら、システム化の効果が出やすいです。</h2>
+        </div>
+        <div class="cosmo-card-grid">
+          <article>
+            <h3>最新版のExcelが分からない</h3>
+            <p>入力先、確認状況、集計表が分かれ、担当者だけが全体を把握している状態を整理します。</p>
+          </article>
+          <article>
+            <h3>確認漏れ・転記ミスが出る</h3>
+            <p>入力内容をそのまま一覧、検索、集計、報告に使えるようにします。</p>
+          </article>
+          <article>
+            <h3>制度運用が重い</h3>
+            <p>ストレスチェック、相談記録、講義申込など、扱いに注意が必要な情報を分けて管理します。</p>
+          </article>
+          <article>
+            <h3>改善したいが時間がない</h3>
+            <p>分かっていてもできない業務を、AIや自動化で短縮できる形にします。</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="cta-band">
-      <div class="container cta-simple">
-        <p class="lp-kicker centered">Next Step</p>
-        <h2 class="cta-title">まずは、いまの業務の流れを整理します。</h2>
-        <p class="cta-lead">作りたい機能名よりも、どの作業で時間がかかっているかを確認すると、必要なシステムが見えやすくなります。</p>
-        <div class="cta-checks">
-          <div><strong>現在の管理方法</strong><span>紙、Excel、既存システム、メールなど。</span></div>
-          <div><strong>困っている作業</strong><span>転記、確認、集計、共有、報告、検索など。</span></div>
-          <div><strong>利用する人</strong><span>担当者、管理者、従業員、外部関係者など。</span></div>
-          <div><strong>希望時期</strong><span>急ぐもの、後でよいもの、今は作らないもの。</span></div>
+    <section class="cosmo-section cosmo-steps-section">
+      <div class="container">
+        <div class="cosmo-section-head">
+          <p class="cosmo-eyebrow">Steps To Start</p>
+          <h2>最初の相談から、3段階で進めます。</h2>
         </div>
-        <div class="notice-panel">
-          <strong>相談受付について</strong>
-          <p>お問い合わせは紹介者または既存の連絡先からお願いします。初回相談では、現在の管理方法と困っている作業をお知らせください。</p>
+        <div class="cosmo-steps">
+          <article>
+            <span>01.</span>
+            <h3>今の業務を見える化</h3>
+            <p>使っている資料、確認順、担当者、困っている作業を整理します。</p>
+          </article>
+          <article>
+            <span>02.</span>
+            <h3>最小構成を決める</h3>
+            <p>最初に作る画面、後回しにする機能、作らない方がよい範囲を分けます。</p>
+          </article>
+          <article>
+            <span>03.</span>
+            <h3>試作して運用に合わせる</h3>
+            <p>実際に触れる形で確認し、現場で使える表現や流れに調整します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cosmo-section">
+      <div class="container cosmo-security">
+        <div>
+          <p class="cosmo-eyebrow">Data & Privacy</p>
+          <h2>個人情報と会社共有情報を、最初から分けて考えます。</h2>
+          <p>
+            ストレスチェック、相談、従業員情報を扱う場合、会社が見てよい情報と見てはいけない情報を分けることが重要です。
+            HTTPS、個別ID、権限管理、説明文を前提に設計します。
+          </p>
+        </div>
+        <div class="security-orbits" aria-label="情報管理の要点">
+          <span>HTTPS</span>
+          <span>個別ID</span>
+          <span>権限管理</span>
+          <span>本人通知</span>
+          <span>集団分析</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cosmo-section cosmo-price-section">
+      <div class="container">
+        <div class="cosmo-section-head">
+          <p class="cosmo-eyebrow">Pricing</p>
+          <h2>まず小さく始め、必要な範囲だけ広げます。</h2>
+          <p>金額は機能数だけでなく、利用者数、権限、データ量、帳票、外部連携、保守範囲で変わります。</p>
+        </div>
+        <div class="cosmo-price-grid">
+          <article>
+            <span>業務整理</span>
+            <strong>33,000円から</strong>
+            <p>現状確認、業務フロー整理、開発範囲の切り分け。</p>
+          </article>
+          <article>
+            <span>小規模ツール</span>
+            <strong>165,000円から</strong>
+            <p>入力フォーム、一覧、検索、簡易管理画面など。</p>
+          </article>
+          <article>
+            <span>Webシステム</span>
+            <strong>330,000円から</strong>
+            <p>複数画面、権限、集計、帳票、運用設計を含む開発。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cosmo-cta">
+      <div class="container">
+        <p class="cosmo-eyebrow">Next Step</p>
+        <h2>まずは、今の業務の流れをそのまま見せてください。</h2>
+        <p>きれいに整理された資料でなくて大丈夫です。紙、Excel、メール、既存フォームを見ながら、どこを仕組みにするか決めます。</p>
+        <div class="cosmo-actions center">
+          <a class="btn btn-primary btn-lg" href="system-development.html">開発内容を詳しく見る</a>
+          <a class="btn btn-outline btn-lg" href="about.html">InfoMについて見る</a>
         </div>
       </div>
     </section>

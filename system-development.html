@@ -6,7 +6,7 @@
   <title>InfoM | システム開発</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="cosmo-page system-page">
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">InfoM</a>
@@ -29,163 +29,215 @@
   </header>
 
   <main>
-    <section class="lp-hero">
-      <div class="container lp-hero-inner">
-        <div class="lp-hero-copy">
-          <p class="lp-kicker">System Development</p>
-          <h1>現場の作業に合わせて、必要な機能から作ります。</h1>
-          <p class="lp-lead">
-            業務フローを確認し、入力、一覧、検索、集計、権限、帳票などを必要な順番で整えます。
+    <section class="cosmo-hero compact">
+      <div class="cosmo-orbit" aria-hidden="true"></div>
+      <div class="container cosmo-hero-grid">
+        <div class="cosmo-hero-copy">
+          <p class="cosmo-pill">Custom Workflow Systems</p>
+          <h1>現場の作業に合わせて、<span>必要な機能から</span>作ります。</h1>
+          <p class="cosmo-lead">
             「何を作るか」より先に、「どの作業を減らすか」を決める開発です。
+            入力、一覧、検索、集計、権限、帳票、AI活用を、運用できるサイズから整えます。
           </p>
-          <div class="lp-trust-row" aria-label="開発の特徴">
-            <span>業務整理</span>
-            <span>Webフォーム</span>
-            <span>管理画面</span>
-            <span>帳票・集計</span>
-            <span>運用支援</span>
+          <div class="cosmo-actions">
+            <a class="btn btn-primary btn-lg" href="#development-scope">開発範囲を見る</a>
+            <a class="btn btn-outline btn-lg" href="#development-process">進め方を見る</a>
           </div>
         </div>
-        <div class="product-shot" aria-label="管理画面のイメージ">
-          <div class="product-topbar">
-            <span>Project Console</span>
-            <strong>業務管理</strong>
+
+        <div class="cosmo-console" aria-label="システム開発画面のイメージ">
+          <div class="console-head">
+            <div class="console-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <strong>Project Console</strong>
           </div>
-          <div class="product-metrics">
-            <div><span>入力待ち</span><strong>6</strong></div>
-            <div><span>確認中</span><strong>14</strong></div>
-            <div><span>今月完了</span><strong>42</strong></div>
-          </div>
-          <div class="product-list">
-            <div><span class="status status-new"></span><strong>申請内容の確認</strong><em>一覧</em></div>
-            <div><span class="status status-work"></span><strong>対応履歴の追記</strong><em>詳細</em></div>
-            <div><span class="status status-done"></span><strong>報告書データ出力</strong><em>集計</em></div>
-          </div>
-          <div class="product-foot">
-            <span>入力</span>
-            <span>権限</span>
-            <span>集計</span>
-            <span>出力</span>
+          <div class="console-grid">
+            <div class="console-panel console-main">
+              <span class="console-label">BUILD SCOPE</span>
+              <h2>最初に作るものを絞る</h2>
+              <div class="scope-meter">
+                <span style="--w: 72%">入力・一覧</span>
+                <span style="--w: 58%">検索・集計</span>
+                <span style="--w: 44%">帳票・権限</span>
+              </div>
+            </div>
+            <div class="console-panel">
+              <span class="console-label">MVP</span>
+              <strong class="console-number">2-4</strong>
+              <p>週間目安で試作できる範囲から検討</p>
+            </div>
+            <div class="console-panel">
+              <span class="console-label">MODULES</span>
+              <ul class="console-list">
+                <li>フォーム</li>
+                <li>ダッシュボード</li>
+                <li>CSV出力</li>
+              </ul>
+            </div>
+            <div class="console-panel console-wide">
+              <span class="console-label">DECISION</span>
+              <div class="action-row"><strong>作る</strong><em>入力・一覧・検索</em></div>
+              <div class="action-row"><strong>後で足す</strong><em>通知・外部連携</em></div>
+              <div class="action-row"><strong>作らない</strong><em>不要な装飾機能</em></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="lp-section lp-intro">
-      <div class="container lp-split">
+    <section class="cosmo-section" id="development-scope">
+      <div class="container">
+        <div class="cosmo-section-head">
+          <p class="cosmo-eyebrow">Development Scope</p>
+          <h2>システム化する範囲を、先に切り分けます。</h2>
+          <p>費用と運用の無理を避けるため、必要な機能、後で足す機能、作らない機能を分けます。</p>
+        </div>
+        <div class="cosmo-module-grid">
+          <article>
+            <span>Input</span>
+            <h3>入力フォーム</h3>
+            <p>必須項目、選択肢、入力補助、添付、確認画面を整えます。</p>
+          </article>
+          <article>
+            <span>Board</span>
+            <h3>一覧・検索</h3>
+            <p>ステータス、担当者、期限、絞り込みで、今見るべき情報を探しやすくします。</p>
+          </article>
+          <article>
+            <span>Record</span>
+            <h3>詳細・履歴</h3>
+            <p>対応履歴、メモ、次回予定を残し、担当者だけに情報が閉じないようにします。</p>
+          </article>
+          <article>
+            <span>Report</span>
+            <h3>集計・帳票</h3>
+            <p>件数、進捗、月次集計、CSV、簡易報告を出せる形にします。</p>
+          </article>
+          <article>
+            <span>Role</span>
+            <h3>権限管理</h3>
+            <p>閲覧範囲、編集範囲、管理者画面を分け、見せてよい情報だけを見せます。</p>
+          </article>
+          <article>
+            <span>AI</span>
+            <h3>AI・自動化</h3>
+            <p>文章整理、分類、要約、確認漏れ防止など、人の負担が重い作業から検討します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cosmo-section cosmo-dark-band">
+      <div class="container cosmo-solution-grid">
+        <div class="cosmo-section-head left">
+          <p class="cosmo-eyebrow">Good Fit</p>
+          <h2>このような業務に向いています。</h2>
+          <p>すでに業務は動いているが、転記、確認、集計、報告が重くなっている場合に効果が出やすいです。</p>
+        </div>
+        <div class="solution-stack">
+          <a href="#development-process">
+            <span>Case 01</span>
+            <strong>Excel管理のWeb化</strong>
+            <em>複数ファイル、最新版管理、転記作業を減らす。</em>
+          </a>
+          <a href="#development-process">
+            <span>Case 02</span>
+            <strong>申請・承認・対応履歴</strong>
+            <em>誰が見て、誰が確認し、どこで止まっているかを見える化。</em>
+          </a>
+          <a href="stress-check.html">
+            <span>Case 03</span>
+            <strong>ストレスチェック運用管理</strong>
+            <em>受検状況、本人通知、会社向け報告の扱いを分ける。</em>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cosmo-section" id="development-process">
+      <div class="container">
+        <div class="cosmo-section-head">
+          <p class="cosmo-eyebrow">Process</p>
+          <h2>開発は、4段階で無理なく進めます。</h2>
+        </div>
+        <div class="cosmo-steps four">
+          <article>
+            <span>01.</span>
+            <h3>現状確認</h3>
+            <p>使っている表、紙、メール、既存フォーム、困っている作業を確認します。</p>
+          </article>
+          <article>
+            <span>02.</span>
+            <h3>範囲整理</h3>
+            <p>最初に作る機能、後から足す機能、作らない機能を分けます。</p>
+          </article>
+          <article>
+            <span>03.</span>
+            <h3>試作・調整</h3>
+            <p>画面や入力の流れを作り、実際の業務に合わせて表現を直します。</p>
+          </article>
+          <article>
+            <span>04.</span>
+            <h3>運用開始</h3>
+            <p>使い方、権限、バックアップ、修正、追加開発の進め方を整理します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cosmo-section">
+      <div class="container cosmo-security">
         <div>
-          <p class="lp-kicker">Approach</p>
-          <h2>最初から全部作らず、使う部分から始めます。</h2>
+          <p class="cosmo-eyebrow">System Quality</p>
+          <h2>見た目より、運用で困らない設計を優先します。</h2>
+          <p>
+            使わない機能を増やすより、毎日使う入力、検索、確認、報告の負担を下げます。
+            個人情報を扱う場合は、閲覧権限と共有範囲を最初に決めます。
+          </p>
         </div>
-        <p>
-          業務システムは、機能が多いほど良いとは限りません。
-          InfoMでは、最初に作る範囲、後で足す範囲、作らない方がよい範囲を分け、運用できるサイズで始めます。
-        </p>
+        <div class="quality-list">
+          <div><strong>権限</strong><span>管理者、担当者、閲覧のみを分ける</span></div>
+          <div><strong>記録</strong><span>対応履歴と変更内容を残す</span></div>
+          <div><strong>出力</strong><span>CSV、集計、簡易報告に使える形にする</span></div>
+          <div><strong>保守</strong><span>運用後の修正と追加を前提にする</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="lp-section lp-muted">
+    <section class="cosmo-section cosmo-price-section">
       <div class="container">
-        <p class="lp-kicker centered">Use Cases</p>
-        <h2 class="lp-title centered">対応しやすい業務</h2>
-        <div class="lp-deliverable-grid">
-          <article>
-            <h3>Excel管理のWeb化</h3>
-            <p>複数ファイル、転記、最新版管理を減らし、入力と確認を一つの流れにします。</p>
-          </article>
-          <article>
-            <h3>申請・承認管理</h3>
-            <p>申請内容、確認者、ステータス、履歴を見えるようにします。</p>
-          </article>
-          <article>
-            <h3>顧客・案件管理</h3>
-            <p>顧客情報、対応履歴、次回予定、進捗をまとめて管理します。</p>
-          </article>
-          <article>
-            <h3>相談・面談記録</h3>
-            <p>記録の入力、権限、対応状況、次回確認を整理します。</p>
-          </article>
-          <article>
-            <h3>ストレスチェック運用管理</h3>
-            <p>受検状況、本人通知、簡易報告など、制度運用に関わる作業を支援します。</p>
-          </article>
-          <article>
-            <h3>研修・講義管理</h3>
-            <p>受講者、日程、資料、アンケート、振り返りを管理しやすくします。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="lp-section">
-      <div class="container">
-        <p class="lp-kicker centered">Build Scope</p>
-        <h2 class="lp-title centered">開発で整える範囲</h2>
-        <div class="lp-scope-table" role="table" aria-label="開発で整える範囲">
-          <div class="lp-scope-head" role="row">
-            <span role="columnheader">領域</span>
-            <span role="columnheader">内容</span>
-            <span role="columnheader">目的</span>
-          </div>
-          <div role="row"><span>入力</span><span>フォーム、必須項目、選択肢、入力補助</span><span>転記や入力漏れを減らす</span></div>
-          <div role="row"><span>一覧</span><span>検索、絞り込み、並び替え、ステータス表示</span><span>今見るべき情報を探しやすくする</span></div>
-          <div role="row"><span>詳細</span><span>対応履歴、添付、メモ、次回予定</span><span>担当者だけに情報が残らないようにする</span></div>
-          <div role="row"><span>集計</span><span>件数、進捗、月次集計、CSV出力</span><span>報告や振り返りに使える形にする</span></div>
-          <div role="row"><span>権限</span><span>閲覧範囲、編集範囲、管理者画面</span><span>見せてよい情報を分ける</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="lp-section lp-muted">
-      <div class="container">
-        <p class="lp-kicker centered">Process</p>
-        <h2 class="lp-title centered">開発の流れ</h2>
-        <div class="lp-flow">
-          <div><span>01</span><strong>現状確認</strong><p>今の作業、使っている表、困っている場面を確認します。</p></div>
-          <div><span>02</span><strong>範囲整理</strong><p>最初に必要な機能と、後から足せる機能を分けます。</p></div>
-          <div><span>03</span><strong>試作</strong><p>画面や入力の流れを作り、実際の業務に合わせて調整します。</p></div>
-          <div><span>04</span><strong>運用開始</strong><p>使い方、権限、修正方法、保守の進め方を整理します。</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="lp-section">
-      <div class="container lp-split">
-        <div>
-          <p class="lp-kicker">Cost</p>
+        <div class="cosmo-section-head">
+          <p class="cosmo-eyebrow">Cost</p>
           <h2>費用は、作る画面数だけでは決まりません。</h2>
+          <p>利用者数、権限、データ量、帳票、外部連携、公開範囲、保守方法で変わります。</p>
         </div>
-        <div class="lp-review-list">
-          <div>
-            <strong>費用に影響するもの</strong>
-            <p>利用者数、権限、データ量、帳票、外部連携、公開範囲、保守方法。</p>
-          </div>
-          <div>
-            <strong>小さく始める目安</strong>
-            <p>業務整理は33,000円から、小規模ツールは165,000円から、Webシステムは330,000円から。</p>
-          </div>
-          <div>
-            <strong>見積前に確認すること</strong>
-            <p>いま何に時間がかかっているか、誰が使うか、どの情報を見せてよいか。</p>
-          </div>
+        <div class="cosmo-price-grid">
+          <article>
+            <span>業務整理</span>
+            <strong>33,000円から</strong>
+            <p>現状確認、業務フロー整理、開発範囲の切り分け。</p>
+          </article>
+          <article>
+            <span>小規模ツール</span>
+            <strong>165,000円から</strong>
+            <p>入力フォーム、一覧、検索、簡易管理画面など。</p>
+          </article>
+          <article>
+            <span>Webシステム</span>
+            <strong>330,000円から</strong>
+            <p>複数画面、権限、集計、帳票、運用設計を含む開発。</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="cta-band">
-      <div class="container cta-simple">
-        <p class="lp-kicker centered">Development Brief</p>
-        <h2 class="cta-title">開発前に、作るものと作らないものを整理します。</h2>
-        <p class="cta-lead">最初から大きく作るより、毎月の負担が減る部分を先に決めると、費用と運用の無理が出にくくなります。</p>
-        <div class="cta-checks">
-          <div><strong>今ある資料</strong><span>Excel、紙帳票、入力フォーム、集計表、報告書。</span></div>
-          <div><strong>必須の機能</strong><span>入力、一覧、検索、権限、帳票、CSV、通知。</span></div>
-          <div><strong>利用者と権限</strong><span>誰が入力し、誰が確認し、誰が出力するか。</span></div>
-          <div><strong>運用開始後</strong><span>修正、保守、バックアップ、追加開発の進め方。</span></div>
-        </div>
-        <div class="notice-panel">
-          <strong>相談受付について</strong>
-          <p>お問い合わせは紹介者または既存の連絡先からお願いします。内容確認後に、概算範囲と次に確認する資料を整理します。</p>
+    <section class="cosmo-cta">
+      <div class="container">
+        <p class="cosmo-eyebrow">Development Brief</p>
+        <h2>開発前に、作るものと作らないものを整理します。</h2>
+        <p>今ある資料、困っている作業、利用者、見せてよい情報を確認できれば、最初の開発範囲を整理できます。</p>
+        <div class="cosmo-actions center">
+          <a class="btn btn-primary btn-lg" href="index.html">トップへ戻る</a>
+          <a class="btn btn-outline btn-lg" href="privacy.html">個人情報の扱いを見る</a>
         </div>
       </div>
     </section>
